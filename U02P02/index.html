@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 <html lang="es-es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Selección de Auto</title>
     <style>
         table,
         td,
         th {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 5px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
         }
+
         table {
-        width: 100%;
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
-    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Color Favorito</th>
+                <th>Marca de auto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pablo</td>
+                <td>Macieyko</td>
+                <td>Verde</td>
+                <td>BMW</td>
+            </tr>
+            <tr>
+                <td>Hector</td>
+                <td>Mendoza</td>
+                <td>Rojo</td>
+                <td>Audi</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>Rimache</td>
+                <td>Azul</td>
+                <td>Mercedez Benz</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Marca de Auto</th>
+                <th colspan="2">Colores</th>
+                <th>Modelo</th>
+                <th>Datos del Auto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">BMW</td>
+                <td>Verde</td>
+                <td>Negro</td>
+                <td>M3</td>
+                <td><a href="https://es.wikipedia.org/wiki/BMW_M3">Ver datos del Auto</a></td>
+            </tr>
+            <tr>
+                <td>Negro</td>
+                <td>Rojo</td>
+                <td>M4</td>
+                <td><a href="https://es.wikipedia.org/wiki/BMW_Serie_4">Ver datos del Auto</a></td>
+            </tr>
+            <tr>
+                <td>Audi</td>
+                <td>Rojo</td>
+                <td>Amarillo</td>
+                <td>R8</td>
+                <td><a href="https://es.wikipedia.org/wiki/Audi_R8">Ver datos del Auto</a></td>
+            </tr>
+            <tr>
+                <td>Mercedez Benz</td>
+                <td>Amarillo</td>
+                <td>Azul</td>
+                <td>AMG-GT</td>
+                <td><a href="https://es.wikipedia.org/wiki/Mercedes-AMG_GT">Ver datos del Auto</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Seleccion de Auto</h1>
+    <p>Por favor, ingresa tus datos para iniciar sesión:</p>
+
+    <form action="action.php" method="post" target="_blank">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario" required>
+        <br>
+
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" required>
+        <br>
+
+        <label>
+        <input type="checkbox" name="recordar"> Recordar mis datos.
+        </label>
+        <br>
+
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+
+
 </body>
+
 </html>
