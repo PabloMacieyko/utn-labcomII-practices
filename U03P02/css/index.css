@@ -46,10 +46,31 @@ nav {
 .nav-item:hover {
     background-color: #090;
     transform: scale(1.1);
+    border-radius: 25%;
 }
 
 .nav-item:hover a {
     color: black;
-    font-weight: bold;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.nav-item-login {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.nav-item-login a {
+    color: blue;
+    font-weight: bold;
+    background-color: transparent;
+    
+}
+
+.nav-item-login a:hover {
+    background-color: transparent;
+    color: red;
+    font-weight: bold;
 }
