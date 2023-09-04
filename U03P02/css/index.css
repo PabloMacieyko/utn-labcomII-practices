@@ -17,7 +17,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #007700;
+    background-color: #1a1a1a;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
@@ -40,23 +40,24 @@ nav {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
-    color: #fff;
+    color: #3498db;
 }
 
 .nav-item:hover {
-    background-color: #090;
+
+    background-color: #555;
     transform: scale(1.1);
     border-radius: 25%;
 }
 
 .nav-item:hover a {
-    color: black;
+    color: #2980b9;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
     border-radius: 50%;
 }
 
 .nav-item-login {
-    border: 1px solid;
+    border: 2px solid #3498db;
     border-radius: 5px;
     margin: 0 10px;
     padding: 0 10px;
@@ -71,6 +72,6 @@ nav {
 
 .nav-item-login a:hover {
     background-color: transparent;
-    color: red;
+    color: white;
     font-weight: bold;
 }
