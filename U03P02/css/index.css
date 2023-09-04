@@ -42,3 +42,14 @@ nav {
     text-decoration: none;
     color: #fff;
 }
+
+.nav-item:hover {
+    background-color: #090;
+    transform: scale(1.1);
+}
+
+.nav-item:hover a {
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
+}
